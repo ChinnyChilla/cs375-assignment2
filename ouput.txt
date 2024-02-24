@@ -1,0 +1,7 @@
+found 3d points, running 3d algorithm
+brute force took 768.803 ms
+the closest points (brute force) are: (5629, 8993, 0) and (5631, 8993, 0)
+the closest distance (brute force) is: 2
+divide and conquer took 7.03875 ms
+the closest points (divide and conquer) are: (9995, 9998, 0) and (9997, 9998, 0)
+the closest distance (divide and conquer) is: 2
