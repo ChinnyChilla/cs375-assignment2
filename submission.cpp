@@ -4,6 +4,8 @@
 #include <chrono>
 #include <fstream>
 #include <sstream>
+#include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -74,7 +76,8 @@ double distance(pair<int, int> p1, pair<int, int> p2) {
 vector<pair<int, int>> bruteForce(vector<pair<int,int>> points) {
 	double min_distance = INFINITY;
 	vector<pair<int, int>> closest;
-	int first_pair, second_pair;
+	int first_pair = -1;
+	int second_pair = -1;
 
 	for (unsigned long i = 0; i < points.size(); i++)
 	{
@@ -152,7 +155,8 @@ double distance3d(vector<int> p1, vector<int> p2) {
 vector<vector<int>> bruteForce3d(vector<vector<int>> points) {
 	double min_distance = INFINITY;
 	vector<vector<int>> closest;
-	int first_pair, second_pair;
+	int first_pair = -1;
+	int second_pair = -1;
 
 	for (unsigned long i = 0; i < points.size(); i++)
 	{
